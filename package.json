@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "yarn lerna run dev",
     "build": "yarn lerna run build "
   },
   "devDependencies": {
@@ -12,7 +13,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "playgrounds/*"
     ],
     "nohoist": [
       "**/normalize-scss"
